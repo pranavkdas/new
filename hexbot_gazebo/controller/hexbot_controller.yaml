@@ -7,11 +7,6 @@ hexbot_controller:
        - joint_lastlink
     state_publish_rate:  25
     action_monitor_rate: 10
-    #pid_gains:
-    #  joint_base_top: {p: 100.0, i: 0.01, d: 10.0}
-    #  joint_arm_lower: {p: 100.0, i: 0.01, d: 10.0}
-    #  joint_arm_upper: {p: 100.0, i: 0.01, d: 10.0}
-    #  joint_lastlink: {p: 100.0, i: 0.01, d: 10.0}
 
 
 

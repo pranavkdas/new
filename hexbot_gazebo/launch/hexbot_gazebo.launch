@@ -27,6 +27,7 @@
 
 	<!-- joint_state_controller -->
 	<rosparam file="$(find hexbot_gazebo)/controller/joint_state_controller.yaml" command="load"/>
+	<rosparam file="$(find hexbot_gazebo)/controller/gazebo_ros_pid.yaml" command="load"/>
 	<node 
 		name="joint_state_controller_spawner" 
 		pkg="controller_manager" 

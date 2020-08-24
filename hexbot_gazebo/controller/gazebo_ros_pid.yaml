@@ -1,0 +1,8 @@
+gazebo_ros_control/pid_gains:
+      joint_base_top: {p: 100.0, i: 0.01, d: 10.0}
+      joint_arm_lower: {p: 100.0, i: 0.01, d: 10.0}
+      joint_arm_upper: {p: 100.0, i: 0.01, d: 10.0}
+      joint_lastlink: {p: 100.0, i: 0.01, d: 10.0}
+
+
+
