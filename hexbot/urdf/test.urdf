@@ -374,7 +374,12 @@
       </geometry>
     </collision>
   </link>
-
+  <joint name="fingerleft_tohand" type="fixed">
+    <origin rpy="0 0 0" xyz="-0.02 0.03 0"/>
+    <parent link="hand"/>
+    <child link="fingerleft"/>
+  </joint>
+<!--
   <joint name="fingerleft_tohand" type="prismatic">
     <origin rpy="0 0 0" xyz="-0.02 0.03 0"/>
     <parent link="hand"/>
@@ -393,7 +398,7 @@
       <hardwareInterface>hardware_interface/PositionJointInterface</hardwareInterface>
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
-  </transmission>
+  </transmission> -->
 
   <link name="fingerright">
     <inertial>
@@ -415,7 +420,12 @@
       </geometry>
     </collision>
   </link>
-
+  <joint name="fingerright_tohand" type="fixed">
+    <origin rpy="0 0 0" xyz="0.02 0.03 0"/>
+    <parent link="hand"/>
+    <child link="fingerright"/>
+  </joint>
+<!--
   <joint name="fingerright_tohand" type="prismatic">
     <origin rpy="0 0 0" xyz="0.02 0.03 0"/>
     <parent link="hand"/>
@@ -435,7 +445,7 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-
+-->
   <link name="base_footprint">
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
